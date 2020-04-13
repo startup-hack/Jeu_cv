@@ -1,0 +1,108 @@
+/* Définition d'une nouvelle police nommée Press Start 2P */
+@font-face {
+  font-family: "Press Start 2P", cursive;
+  src: url("PressStart2P-Regular.ttf");
+}
+
+/* Eléments principaux de la page */
+
+body {
+  text-align: center;
+  margin: auto;
+  background-image: url("img/back.jpg");
+  background-size: cover;
+}
+
+#bloc_page {
+  width: 1000px;
+  margin: auto;
+}
+
+header {
+  font-weight: bold;
+}
+
+/* Navigation */
+
+nav {
+  padding: 20px;
+  font-family: "Press Start 2P", cursive;
+}
+
+a {
+  text-decoration: none;
+  font-size: 25px;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: black;
+}
+
+a:hover {
+  text-decoration: black;
+}
+
+/* Bannière */
+
+#banniere {
+  padding-top: 20px;
+  height: 200px;
+  background: url("img/photo.png");
+  box-shadow: 4px 4px 4px #3b3a39;
+  padding-bottom: 30px;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+}
+
+/* jeu */
+
+#jeu {
+  margin: auto;
+  margin-top: 45px;
+  position: relative;
+  margin-bottom: 45px;
+  border: solid black;
+  box-shadow: 3px 3px 3px #3b3a39;
+  border-radius: 20px;
+  background-color: cornsilk;
+}
+
+#canvas {
+  border: solid #a0a0a0;
+}
+
+/* section */
+
+#button {
+  background-color: #4caf50;
+  color: white;
+  border-radius: 10px;
+  padding: 20px 20px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#cvpdf {
+  padding: 40px;
+}
+
+#logo img {
+  padding: 50px;
+}
+
+p, #score, #recommencer {
+  font-size: 20px;
+  font-family: "Press Start 2P", cursive;
+}
+
+h1, h2 {
+  font-size: 27px;
+  font-family: "Press Start 2P", cursive;
+}
+
+section{
+  border: solid black;
+  box-shadow: 3px 3px 3px #3b3a39;
+  border-radius: 20px;
+  background-color: #FFFAFA;
+}
+

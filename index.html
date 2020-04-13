@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css" />
+    <title>jeu cv</title>
+</head>
+
+<body>
+    <div id="bloc_page">
+
+        <header>
+            <nav>
+                <a href="#accueil" class="accueil">ACCUEIL</a>
+                <a href="#jeu" class="blog">JEU</a>
+                <a href="#cvpdf" class="cv">CV</a>
+                <a href="#contact" class="contact">CONTACT</a>
+            </nav>
+        </header>
+
+        <div id="banniere"></div>
+
+        <section id="jeu">
+            <h1>Jeu/CV : CV Gamification</h1>
+
+            <p>Utiliser les flèches ← ↑ → ↓ pour vous déplacer <br>
+                Atteignez un score de 20 pour gagner
+            </p>
+
+            <div id="score">0</div>
+            <canvas id="canvas" width="400" height="400"></canvas>
+
+            <br>
+            <button id="cache"> <a href="cv.pdf">cv &#128585</a> </button>
+
+            <div id="recommencer">
+                Appuyez sur "Entrée" pour recommencer &#128584
+            </div>
+            <br>
+        </section>
+
+        <section id="contact">
+            <h2> Contact: Chang Valérie</h2>
+            <p>
+                Actuellement en formation, je suis disponible à partir du 26 Mai
+                2020.
+            </p>
+        </section>
+        <br>
+
+        <section>
+            <h2>Développeur full stack JS</h2>
+            <p>
+                Formation Ifocop | 2020<br>
+                Titre RNCP Niveau 6 bac+3/4 <br>
+                Html5, Css3, JavaScript, jQuery, Bootstrap, Angular <br>
+                MongoDB, NodeJS, ExpressJS, AJAX, Git <br>
+            </p>
+
+            <div id="cvpdf"> <a href="cv.pdf" id="button">Consulter mon CV</a>
+            </div>
+
+            <div id="logo">
+                <img src="img/html5.png" alt="HTML5" />
+                <img src="img/css3.png" alt="CSS3" />
+                <img src="img/js.png" alt="JS" />
+                <img src="img/jquery.png" alt="jQuery" />
+                <img src="img/git.png" alt="GIT" />
+            </div>
+        </section>
+
+        <footer>
+            <p> Valérie Chang / changvaleriee@gmail.com</p>
+        </footer>
+
+        <script src="script.js"></script>
+
+    </div>
+</body>
+
+</html>
