@@ -7,8 +7,8 @@ var snakeY = 10;
 var largeur = 20; // 20 x 20 = 400 width / heigth
 var hauteur = 20;
 
-var appleX = 15;
-var appleY = 15;
+var CarreVertX = 15;
+var CarreVertY = 15;
 
 var mechantX = 20;
 var mechantY = 20;
@@ -112,12 +112,12 @@ function mangeMechant() {
 }
 
 function mangeCarreVert() {
-  if (appleX == snakeX && appleY == snakeY) {
+  if (CarreVertX == snakeX && CarreVertY == snakeY) {
     taille++;
 
     // affiche le prochain carre vert
-    appleX = Math.floor(Math.random() * largeur); //renvoie un entier aléatoire de 0 à 19
-    appleY = Math.floor(Math.random() * hauteur);
+    CarreVertX = Math.floor(Math.random() * largeur); //renvoie un entier aléatoire de 0 à 19
+    CarreVertY = Math.floor(Math.random() * hauteur);
     // affiche le mechant
     mechantX = Math.floor(Math.random() * largeur);
     mechantY = Math.floor(Math.random() * hauteur);
@@ -130,7 +130,7 @@ function mangeCarreVert() {
 function afficheCarre() {
   // dessine carre vert
   ctx.fillStyle = "green";
-  ctx.fillRect(appleX * largeur, appleY * hauteur, largeur - 1, hauteur - 1);
+  ctx.fillRect(CarreVertX * largeur, CarreVertY * hauteur, largeur - 1, hauteur - 1);
   // dessine mechant (carre rouge)
   ctx.fillStyle = "red";
   ctx.fillRect(mechantX * largeur, mechantY * hauteur, largeur - 1, hauteur - 1);
