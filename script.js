@@ -48,6 +48,7 @@ var play = setInterval(game, 100); // toutes les 10 ms exécute game()
 document.addEventListener("keydown", clavier);
 
 function clavier(evt) {
+   evt.preventDefault();
   switch (evt.keyCode) {
     case 37: //** à gauche */
       vitesseX = -1;
