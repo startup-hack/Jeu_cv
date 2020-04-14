@@ -47,22 +47,22 @@ var play = setInterval(game, 100); // toutes les 10 ms exécute game()
 // fonction d'événement keyDown. Les codes de touche représentent les touches fléchées
 document.addEventListener("keydown", clavier);
 
-function clavier(evt) {
-   evt.preventDefault();
+function clavier(evt) { 
+   evt.preventDefault();  // pour éviter que l'écran de la page web monte et descend
   switch (evt.keyCode) {
-    case 37: //** à gauche */
+    case 37: // à gauche 
       vitesseX = -1;
       vitesseY = 0;
       break;
-    case 38: //** en haut */
+    case 38: // en haut 
       vitesseX = 0;
       vitesseY = -1;
       break;
-    case 39: //** à droite */
+    case 39: // à droite 
       vitesseX = 1;
       vitesseY = 0;
       break;
-    case 40: //** en bas */
+    case 40: // en bas 
       vitesseX = 0;
       vitesseY = 1;
       break;
